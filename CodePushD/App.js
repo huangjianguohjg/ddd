@@ -37,6 +37,10 @@ class App extends Component<Props> {
                 //IMMEDIATE 马上更新
                 installMode : CodePush.InstallMode.IMMEDIATE ,
                 //对话框
+
+
+
+            /*
                 updateDialog : {
                     //是否显示更新描述
                     appendReleaseDescription : true ,
@@ -55,6 +59,8 @@ class App extends Component<Props> {
                     //Alert窗口的标题
                     title : '更新提示'
                 } ,
+
+                */
             } ,
         );
     }
@@ -84,6 +90,13 @@ class App extends Component<Props> {
                 <Text style={styles.instructions}>
                     这是更新的版本
                 </Text>
+                <Image style={{width:50,height:50}} source={require('./Images/4324.png')}/>
+                <Text style={styles.instructions}>
+                    这是更新fdfhjfjhdjfdjhjhfdj的版本
+                </Text>
+                <Image style={{width:50,height:50}} source={require('./Images/4324.png')}/>
+                <Image style={{width:50,height:50}} source={require('./Images/4324.png')}/>
+                <Image style={{width:50,height:50}} source={require('./Images/4324.png')}/>
                 <Image style={{width:50,height:50}} source={require('./Images/4324.png')}/>
             </View>
         );
