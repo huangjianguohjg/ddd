@@ -4,7 +4,8 @@ import {
     StyleSheet,
     Text,
     View,
-    Image
+    Image,
+    WebView
 } from 'react-native';
 
 import CodePush from "react-native-code-push"; // 引入code-push
@@ -40,7 +41,7 @@ class App extends Component<Props> {
 
 
 
-            /*
+
                 updateDialog : {
                     //是否显示更新描述
                     appendReleaseDescription : true ,
@@ -60,7 +61,7 @@ class App extends Component<Props> {
                     title : '更新提示'
                 } ,
 
-                */
+
             } ,
         );
     }
@@ -98,6 +99,10 @@ class App extends Component<Props> {
                 <Image style={{width:50,height:50}} source={require('./Images/4324.png')}/>
                 <Image style={{width:50,height:50}} source={require('./Images/4324.png')}/>
                 <Image style={{width:50,height:50}} source={require('./Images/4324.png')}/>
+                {/*<WebView*/}
+                    {/*source={{uri: 'http://www.baidu.com'}}*/}
+                    {/*style={{flex:1}}*/}
+                {/*/>*/}
             </View>
         );
     }
@@ -111,8 +116,8 @@ export default App
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
+        // justifyContent: 'center',
+        // alignItems: 'center',
         backgroundColor: '#F5FCFF',
     },
     welcome: {
